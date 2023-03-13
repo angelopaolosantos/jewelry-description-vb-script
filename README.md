@@ -1,0 +1,1 @@
+# jewelry-description-vb-script
