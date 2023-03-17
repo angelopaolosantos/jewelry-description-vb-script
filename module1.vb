@@ -18,7 +18,7 @@ Function GETCUSTOMDESCRIPTION(myDesc As String, myOption As Integer)
   Set regex3 = New RegExp
   regex1.Pattern = "^\d+(?=[a-zA-Z]+=)" 'e.g. 8OV=1.16CTW get 8
   regex2.Pattern = "[a-zA-Z]+(?==)" 'e.g. 8OV=1.16CTW get OV
-  regex3.Pattern = "\d?\.?\d+(?=CT)" 'e.g. 8OV=1.16CTW get 1.16
+  regex3.Pattern = "\d*\.?\d+(?=CT)" 'e.g. 8OV=1.16CTW get 1.16
   
   Dim componentQty As Object
   Dim componentType As Object
